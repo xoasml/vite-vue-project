@@ -18,7 +18,6 @@ const data = ref([
   { name: "John Doe", age: 28, country: "USA" },
   { name: "Jane Smith", age: 32, country: "UK" },
   { name: "Juan Carlos", age: 25, country: "Spain" },
-  { name: "Juan Carlos", age: 25, country: "Spain" },
 ]);
 </script>
 
@@ -33,6 +32,5 @@ const data = ref([
   width: 500px;
   height: 500px;
   padding: 5px;
-
 }
 </style>

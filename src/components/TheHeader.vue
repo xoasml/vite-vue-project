@@ -1,9 +1,9 @@
 <template>
   <div class="box">
     <div class="buttons">
-      <button @click="addTab('Menu 1', MenuOne)">Menu 1</button>
-      <button @click="addTab('Menu 2', MenuTwo)">Menu 2</button>
-      <button @click="addTab('Menu 3', MenuThree)">Menu 3</button>
+      <button @click="addTab('Menu O', MenuOne)">Menu 1</button>
+      <button @click="addTab('Menu TW', MenuTwo)">Menu 2</button>
+      <button @click="addTab('Menu TH', MenuThree)">Menu 3</button>
     </div>
     <div class="tabs" v-if="tabs.length > 0">
       <button

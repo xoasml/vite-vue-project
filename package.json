@@ -19,6 +19,7 @@
     "serve": "^14.2.3",
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
+    "vite-plugin-pwa": "^0.20.1",
     "vue-tsc": "^2.0.24"
   }
 }

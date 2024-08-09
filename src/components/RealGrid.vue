@@ -1,13 +1,33 @@
 <script setup lang="ts">
-import { onMounted, defineProps } from 'vue';
+import {onMounted, defineProps} from 'vue';
+import RealGrid from "./RealGrid.vue";
 
-interface Props {
-  fields: [{}];
-  columns: [{}];
-  data: [{}];
+interface IField {
+  fieldName: string;
+  dataType: string;
 }
 
-const props = defineProps<Props>();
+interface IColumn {
+  name: string;
+  fieldName: string;
+  type: string;
+  width: string;
+  header: { text: string };
+}
+
+interface IData {
+  name: string;
+  age: number;
+  country: string;
+}
+
+interface IRealGrid {
+  fields: IField[];
+  columns: IColumn[];
+  data: IData[];
+}
+
+const props = defineProps<IRealGrid>();
 
 onMounted(() => {
 
@@ -32,7 +52,6 @@ onMounted(() => {
   // });
 });
 </script>
-
 <template>
   <div id="realgrid" style="width: 100%; height: 100%;"></div>
 </template>
